@@ -40,73 +40,74 @@ keypoints:
 
 ### Need an Example of a Paper for without reference to either
 
-## Part 1 - Setup of Git Repository and Python Program
-
-Open `Git Bash` and move to the directory where you want to work with your new Python project <br/>
-Now we need to initiate our new `Git Repository` so that we have our work under version control!
-
-~~~
-git init python_prac
-~~~
-{: .language-bash}
-
-Next lets move into our new git folder `python_prac` and create our Python program by opening your chosen text <br/> 
-editor and saving it with an appropriate name. <br/>
-e.g. using VIM in `Git Bash`. Write a comment `#` at the top of your program stating what it does and then save it.
-
-~~~
-vim ref_finder.py
-~~~
-{: .language-bash}
-
-Run `git status` to see if our new file is under version control.
-
-~~~
-git status
-~~~
-{: .language-bash}
-~~~
-On branch master
-
-No commits yet
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-        ref_finder.py
-
-nothing added to commit but untracked files present (use "git add" to track)
-
-~~~
-{: .output}
-
-Add and commit your python program so that is it under version control.
-
-~~~
-git add ref_finder.py
-git commit -m "inital commit"
-~~~
-{: .language-bash}
-
-Go to your github account and click the `Create repository` button and name the new repository. <br/>
-Now lets add a link to our new remote repository and push our Python progam to it. (Use the link git provides)
-
-~~~
-git remote add origin https://github.com/jaredraynes/Python_Prac.git
-git push -u origin master
-~~~
-{: .language-bash}
-~~~
-Counting objects: 3, done.
-Delta compression using up to 4 threads.
-Compressing objects: 100% (2/2), done.
-Writing objects: 100% (3/3), 317 bytes | 158.00 KiB/s, done.
-Total 3 (delta 0), reused 0 (delta 0)
-To https://github.com/jaredraynes/Python_Prac.git
- * [new branch]      master -> master
-Branch 'master' set up to track remote branch 'master' from 'origin'.
-~~~
-{: .output}
+>## Part 1 - Setup of Git Repository and Python Program
+>
+>Open `Git Bash` and move to the directory where you want to work with your new Python project <br/>
+>Now we need to initiate our new `Git Repository` so that we have our work under version control!
+>
+>~~~
+>git init python_prac
+>~~~
+>{: .language-bash}
+>
+>Next lets move into our new git folder `python_prac` and create our Python program by opening your chosen text <br/> 
+>editor and saving it with an appropriate name. <br/>
+>e.g. using VIM in `Git Bash`. Write a comment `#` at the top of your program stating what it does and then save it.
+>
+>~~~
+>vim ref_finder.py
+>~~~
+>{: .language-bash}
+>
+>Run `git status` to see if our new file is under version control.
+>
+>~~~
+>git status
+>~~~
+>{: .language-bash}
+>~~~
+>On branch master
+>
+>No commits yet
+>
+>Untracked files:
+>  (use "git add <file>..." to include in what will be committed)
+>
+>        ref_finder.py
+>
+>nothing added to commit but untracked files present (use "git add" to track)
+>
+>~~~
+>{: .output}
+>
+>Add and commit your python program so that is it under version control.
+>
+>~~~
+>git add ref_finder.py
+>git commit -m "inital commit"
+>~~~
+>{: .language-bash}
+>
+>Go to your github account and click the `Create repository` button and name the new repository. <br/>
+>Now lets add a link to our new remote repository and push our Python progam to it. (Use the link git provides)
+>
+>~~~
+>git remote add origin https://github.com/jaredraynes/Python_Prac.git
+>git push -u origin master
+>~~~
+>{: .language-bash}
+>~~~
+>Counting objects: 3, done.
+>Delta compression using up to 4 threads.
+>Compressing objects: 100% (2/2), done.
+>Writing objects: 100% (3/3), 317 bytes | 158.00 KiB/s, done.
+>Total 3 (delta 0), reused 0 (delta 0)
+>To https://github.com/jaredraynes/Python_Prac.git
+> * [new branch]      master -> master
+>Branch 'master' set up to track remote branch 'master' from 'origin'.
+>~~~
+>{: .output}
+{: .challenge}
 
 Now we are ready to start coding!!
 
