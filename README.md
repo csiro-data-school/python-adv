@@ -12,6 +12,7 @@ how to write new episodes.
 ## Maintainer(s)
 
 * [Daniel Collins](https://github.com/DC23)
+* [Kerensa McElroy](https://github.com/KerensaMcElroy)
 * [Alex Whan](https://github.com/alexwhan)
 
 ## Authors
