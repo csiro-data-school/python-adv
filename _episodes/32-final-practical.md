@@ -90,27 +90,6 @@ keypoints:
 >>>~~~
 >>>{: .language-bash}
 >>{: .solution}
->We now want to make sure we have an external backup copy of our repository so lets do this on our GitHub account. <br/>
->Go to your github account and click the `Create repository` button and name your new repository. 
->>## CHALLENGE: Add a link to your new remote repository and push our Python progam to it (Use the link GitHub provides).
->>>## Solution
->>>~~~
->>>git remote add origin https://github.com/jaredraynes/Python_Prac.git
->>>git push -u origin master
->>>~~~
->>>{: .language-bash}
->>>~~~
->>>Counting objects: 3, done.
->>>Delta compression using up to 4 threads.
->>>Compressing objects: 100% (2/2), done.
->>>Writing objects: 100% (3/3), 317 bytes | 158.00 KiB/s, done.
->>>Total 3 (delta 0), reused 0 (delta 0)
->>>To https://github.com/jaredraynes/Python_Prac.git
->>> * [new branch]      master -> master
->>>Branch 'master' set up to track remote branch 'master' from 'origin'.
->>>~~~
->>>{: .output}
->>{: .solution}
 {: .challenge}
 
 ## Now we are ready to start coding!!
