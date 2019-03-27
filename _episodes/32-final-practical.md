@@ -147,4 +147,4 @@ keypoints:
 >>>## Hint 7
 >>>Use the write command.
 >>{: .solution}
->{: .challenge}
+{: .challenge}
