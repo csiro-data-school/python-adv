@@ -124,4 +124,27 @@ keypoints:
 >>>4. Print out the result.
 >>>5. Save the result to a text document.
 >>{: .solution}
-{: .challenge}
+>{: .challenge}
+>>## CHALLENGE: Open your Python program (ref_finder.py) and start coding your program
+>>>## Hint 1
+>>>Import argparse and setup the argparse format.
+>>{: .solution}
+>>>## Hint 2
+>>>Write a function.
+>>{: .solution}
+>>>## Hint 3
+>>>Use the read command.
+>>{: .solution}
+>>>## Hint 4
+>>>Use a for loop.
+>>{: .solution}
+>>>## Hint 5
+>>>Use the count command.
+>>{: .solution}
+>>>## Hint 6
+>>>Use the print command.
+>>{: .solution}
+>>>## Hint 7
+>>>Use the write command.
+>>{: .solution}
+>{: .challenge}
