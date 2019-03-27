@@ -42,7 +42,7 @@ keypoints:
 
 >## Part 1 - Setup of Git Repository and Python Program
 >
->Open `Git Bash` and move to the directory where you want to work with your new Python project <br/>
+>Open `Git Bash` and move to the directory where you want to work with your new Python project. <br/>
 >Now we need to initiate our new `Git Repository` so that we have our work under version control!
 >
 >>## Initiate your git repository
@@ -82,33 +82,34 @@ keypoints:
 >~~~
 >{: .output}
 >
->Add and commit your python program so that is it under version control.
->
->~~~
->git add ref_finder.py
->git commit -m "inital commit"
->~~~
->{: .language-bash}
->
+>>## Add and commit your python program so that is it under version control.
+>>>## Solution
+>>>~~~
+>>>git add ref_finder.py
+>>>git commit -m "inital commit"
+>>>~~~
+>>>{: .language-bash}
+>>{: .solution}
 >Go to your github account and click the `Create repository` button and name the new repository. <br/>
->Now add a link to our new remote repository and push our Python progam to it. (Use the link git provides)
->
->~~~
->git remote add origin https://github.com/jaredraynes/Python_Prac.git
->git push -u origin master
->~~~
->{: .language-bash}
->~~~
->Counting objects: 3, done.
->Delta compression using up to 4 threads.
->Compressing objects: 100% (2/2), done.
->Writing objects: 100% (3/3), 317 bytes | 158.00 KiB/s, done.
->Total 3 (delta 0), reused 0 (delta 0)
->To https://github.com/jaredraynes/Python_Prac.git
-> * [new branch]      master -> master
->Branch 'master' set up to track remote branch 'master' from 'origin'.
->~~~
->{: .output}
+>>## Add a link to our new remote repository and push our Python progam to it (Use the link git provides).
+>>>## Solution
+>>>~~~
+>>>git remote add origin https://github.com/jaredraynes/Python_Prac.git
+>>>git push -u origin master
+>>>~~~
+>>>{: .language-bash}
+>>>~~~
+>>>Counting objects: 3, done.
+>>>Delta compression using up to 4 threads.
+>>>Compressing objects: 100% (2/2), done.
+>>>Writing objects: 100% (3/3), 317 bytes | 158.00 KiB/s, done.
+>>>Total 3 (delta 0), reused 0 (delta 0)
+>>>To https://github.com/jaredraynes/Python_Prac.git
+>>> * [new branch]      master -> master
+>>>Branch 'master' set up to track remote branch 'master' from 'origin'.
+>>>~~~
+>>>{: .output}
+>>{: .solution}
 {: .challenge}
 
 ## Now we are ready to start coding!!
@@ -121,5 +122,5 @@ keypoints:
 >>3. Count the number of times the words "R" and/or "Python".
 >>4. Print out the result.
 >>5. Save the result to a text document.
->>{: .hint}
+>{: .hint}
 {: .challenge}
