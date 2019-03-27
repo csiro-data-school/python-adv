@@ -45,10 +45,13 @@ keypoints:
 >Open `Git Bash` and move to the directory where you want to work with your new Python project <br/>
 >Now we need to initiate our new `Git Repository` so that we have our work under version control!
 >
->~~~
->git init python_prac
->~~~
->{: .language-bash}
+>>## Initiate your git repository
+>>>## Solution
+>>>~~~
+>>>git init python_prac
+>>>~~~
+>>>{: .language-bash}
+>>{: .solution}
 >
 >Next lets move into our new git folder `python_prac` and create our Python program by opening your chosen text <br/> 
 >editor and saving it with an appropriate name. <br/>
@@ -76,7 +79,6 @@ keypoints:
 >        ref_finder.py
 >
 >nothing added to commit but untracked files present (use "git add" to track)
->
 >~~~
 >{: .output}
 >
@@ -89,7 +91,7 @@ keypoints:
 >{: .language-bash}
 >
 >Go to your github account and click the `Create repository` button and name the new repository. <br/>
->Now lets add a link to our new remote repository and push our Python progam to it. (Use the link git provides)
+>Now add a link to our new remote repository and push our Python progam to it. (Use the link git provides)
 >
 >~~~
 >git remote add origin https://github.com/jaredraynes/Python_Prac.git
@@ -109,7 +111,15 @@ keypoints:
 >{: .output}
 {: .challenge}
 
-Now we are ready to start coding!!
+## Now we are ready to start coding!!
 
-## Part 2 - Structure of Python Program
-* 
+>## Part 2 - Structure of Python Program
+>* How do we Start? Write down in words what you want your program to do.
+>>## Hint
+>>1. Read in the words in a chosen text document (text file - XML) line-by-line.
+>>2. Search the document for the words "R" and/or "Python".
+>>3. Count the number of times the words "R" and/or "Python".
+>>4. Print out the result.
+>>5. Save the result to a text document.
+>>{: .hint}
+{: .challenge}
