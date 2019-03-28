@@ -104,6 +104,45 @@ keypoints:
 >>>5. Save the result to a text document.
 >>{: .solution}
 >{: .challenge}
+
+>>## CHALLENGE: Open a Jupyter Notebook and write code to read a text file line by line and print each line.
+>>>## Solution
+>>>file = 'absolute file location'
+>>>with read.file(-r) as f:
+>>>    for line in f:
+>>>        print(line)
+>>{: .language-python}
+>>{: .solution}
+>{: .challenge}
+
+>>## CHALLENGE: Copy your Jupyter Notebook script into a new panel and integrate a string search for 'Python' and print the number of counts.
+>>>## Solution
+>>>file = 'absolute file location'
+>>>with read.file(-r) as f:
+>>>    for line in f:
+>>>        if line.string("Python") == True
+>>>            count += 1
+>>>        print("Python was found", count, "times")
+>>{: .language-python}
+>>{: .solution}
+>{: .challenge}
+
+>>## CHALLENGE: Copy your script to your ref_finder.py and integrate Argparse to accept any text file as an argument at the command line.
+>>>## Solution
+>>>import argparse
+>>>
+>>>file = arg.file_loc
+>>>with read.file(-r) as f:
+>>>    for line in f:
+>>>        if line.string("Python") == True
+>>>            count += 1
+>>>        print("Python was found", count, "times")
+>>>
+>>>arg = parser.args
+>>>file_loc = (
+>>{: .solution}
+>{: .challenge}
+
 >>## CHALLENGE: Open your Python program (ref_finder.py) and start coding your program
 >>>## Hint 1
 >>>Import argparse and setup the argparse format.
