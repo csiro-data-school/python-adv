@@ -120,50 +120,100 @@ keypoints:
 >>>file = 'absolute file location'
 >>>with read.file(-r) as f:
 >>>    for line in f:
->>>        if line.string("Python") == True
+>>>        if line.string("Python") == True:
 >>>            count += 1
 >>>        print("Python was found", count, "times")
 >>{: .language-python}
 >>{: .solution}
 >{: .challenge}
 
->>## CHALLENGE: Copy your script to your ref_finder.py and integrate Argparse to accept any text file as an argument at the command line.
+>>## CHALLENGE: In a new panel in your Jupyter Notebook, turn your script into a reusable function.
 >>>## Solution
->>>import argparse
+>>>def ref_finder(file_location):
 >>>
->>>file = arg.file_loc
->>>with read.file(-r) as f:
->>>    for line in f:
->>>        if line.string("Python") == True
->>>            count += 1
->>>        print("Python was found", count, "times")
->>>
->>>arg = parser.args
->>>file_loc = (
+>>>    file = file_location
+>>>    with read.file(-r) as f:
+>>>        for line in f:
+>>>            if line.string("Python") == True:
+>>>                count += 1
+>>>            print("Python was found", count, "times")
+>>{: .language-python}
 >>{: .solution}
 >{: .challenge}
 
->>## CHALLENGE: Open your Python program (ref_finder.py) and start coding your program
->>>## Hint 1
->>>Import argparse and setup the argparse format.
->>{: .solution}
->>>## Hint 2
->>>Write a function.
->>{: .solution}
->>>## Hint 3
->>>Use the read command.
->>{: .solution}
->>>## Hint 4
->>>Use a for loop.
->>{: .solution}
->>>## Hint 5
->>>Use the count command.
->>{: .solution}
->>>## Hint 6
->>>Use the print command.
->>{: .solution}
->>>## Hint 7
->>>Use the write command.
+>>## CHALLENGE: Copy your function into your ref_finder.py program and integrate Argparse so that your program can accept any file from the command line.
+>>>## Solution
+>>>import argparse
+>>>
+>>>def ref_finder(file_location):
+>>>
+>>>    file = file_location
+>>>    with read.file(-r) as f:
+>>>        for line in f:
+>>>            if line.string("Python") == True:
+>>>                count += 1
+>>>            print("Python was found", count, "times")
+>>>
+>>>parser = argparse.ArgumentParser()
+>>>parser.add_argument("file_location")
+>>>args = parser.parse_args()
+>>>ref_finder(args.file_location)
 >>{: .solution}
 >{: .challenge}
-{: .challenge}
+
+>>## CHALLENGE: Update your ref_finder.py program to include optional arguments so you can search for references to 'R' or 'Python.
+>>>## Solution
+>>>import argparse
+>>>
+>>>def ref_finder(file_location, language):
+>>>
+>>>    file = file_location
+>>>    string = language
+>>>    with read.file(-r) as f:
+>>>        for line in f:
+>>>            if line.string(string) == True:
+>>>                count += 1
+>>>            print(string, "was found", count, "times")
+>>>
+>>>parser = argparse.ArgumentParser()
+>>>parser.add_argument("file_location")
+>>>parser.add_argument("language")
+>>>args = parser.parse_args()
+>>>ref_finder(args.file_location, args.language)
+>>{: .solution}
+>{: .challenge}
+
+>>## CHALLENGE: Update your ref_finder.py program so that it can search for both 'R' and 'Python' as an optional argument, printing the counts for both.
+>>>## Solution
+>>>import argparse
+>>>
+>>>def ref_finder(file_location, language, count_both):
+>>>
+>>>    file = file_location
+>>>    if both == True:
+>>>        string1 = 'R'
+>>>        string2 = 'Python'
+>>>        with read.file(-r) as f:
+>>>        for line in f:
+>>>            if line.string(string1) == True:
+>>>                R_count += 1
+>>>            if line.string(string2) == True:
+>>>                Py_count += 1
+>>>            print(string1, "was found", R_count, "times")
+>>>            print(string2, "was found", Py_count, "times")
+>>>    else:
+>>>        string = language
+>>>        with read.file(-r) as f:
+>>>            for line in f:
+>>>                if line.string(string) == True:
+>>>                    count += 1
+>>>                print("string", "was found", count, "times")
+>>>
+>>>parser = argparse.ArgumentParser()
+>>>parser.add_argument("file_location")
+>>>parser.add_argument("language")
+>>>parser.add_argument("count_both", -b, default = False)
+>>>args = parser.parse_args()
+>>>ref_finder(args.file_location, args.language, args.count_both)
+>>{: .solution}
+>{: .challenge}
