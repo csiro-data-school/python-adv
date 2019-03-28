@@ -107,28 +107,33 @@ keypoints:
 
 >>## CHALLENGE: Open a Jupyter Notebook and write code to read a text file line by line and print each line.
 >>>## Solution
+>>>~~~
 >>>file = 'absolute file location'
 >>>with read.file(-r) as f:
 >>>    for line in f:
 >>>        print(line)
->>{: .language-python}
+>>>~~~
+>>>{: .language-python}
 >>{: .solution}
 >{: .challenge}
 
 >>## CHALLENGE: Copy your Jupyter Notebook script into a new panel and integrate a string search for 'Python' and print the number of counts.
 >>>## Solution
+>>>~~~
 >>>file = 'absolute file location'
 >>>with read.file(-r) as f:
 >>>    for line in f:
 >>>        if line.string("Python") == True:
 >>>            count += 1
 >>>        print("Python was found", count, "times")
->>{: .language-python}
+>>>~~~
+>>>{: .language-python}
 >>{: .solution}
 >{: .challenge}
 
 >>## CHALLENGE: In a new panel in your Jupyter Notebook, turn your script into a reusable function.
 >>>## Solution
+>>>~~~
 >>>def ref_finder(file_location):
 >>>
 >>>    file = file_location
@@ -137,12 +142,14 @@ keypoints:
 >>>            if line.string("Python") == True:
 >>>                count += 1
 >>>            print("Python was found", count, "times")
->>{: .language-python}
+>>>~~~
+>>>{: .language-python}
 >>{: .solution}
 >{: .challenge}
 
 >>## CHALLENGE: Copy your function into your ref_finder.py program and integrate Argparse so that your program can accept any file from the command line.
 >>>## Solution
+>>>~~~
 >>>import argparse
 >>>
 >>>def ref_finder(file_location):
@@ -158,11 +165,14 @@ keypoints:
 >>>parser.add_argument("file_location")
 >>>args = parser.parse_args()
 >>>ref_finder(args.file_location)
+>>>~~~
+>>>{: .language-python}
 >>{: .solution}
 >{: .challenge}
 
 >>## CHALLENGE: Update your ref_finder.py program to include optional arguments so you can search for references to 'R' or 'Python.
 >>>## Solution
+>>>~~~
 >>>import argparse
 >>>
 >>>def ref_finder(file_location, language):
@@ -180,11 +190,14 @@ keypoints:
 >>>parser.add_argument("language")
 >>>args = parser.parse_args()
 >>>ref_finder(args.file_location, args.language)
+>>>~~~
+>>>{: .language-python}
 >>{: .solution}
 >{: .challenge}
 
 >>## CHALLENGE: Update your ref_finder.py program so that it can search for both 'R' and 'Python' as an optional argument, printing the counts for both.
 >>>## Solution
+>>>~~~
 >>>import argparse
 >>>
 >>>def ref_finder(file_location, language, count_both):
@@ -215,5 +228,7 @@ keypoints:
 >>>parser.add_argument("count_both", -b, default = False)
 >>>args = parser.parse_args()
 >>>ref_finder(args.file_location, args.language, args.count_both)
+>>>~~~
+>>>{: .language-python}
 >>{: .solution}
 >{: .challenge}
