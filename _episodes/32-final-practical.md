@@ -109,7 +109,7 @@ keypoints:
 >>>## Solution
 >>>~~~
 >>>file = 'absolute file location'
->>>with read.file(-r) as f:
+>>>with open(file, "r") as f:
 >>>    for line in f:
 >>>        print(line)
 >>>~~~
@@ -121,7 +121,7 @@ keypoints:
 >>>## Solution
 >>>~~~
 >>>file = 'absolute file location'
->>>with read.file(-r) as f:
+>>>with open(file, "r") as f:
 >>>    for line in f:
 >>>        if line.string("Python") == True:
 >>>            count += 1
@@ -137,9 +137,9 @@ keypoints:
 >>>def ref_finder(file_location):
 >>>
 >>>    file = file_location
->>>    with read.file(-r) as f:
+>>>    with open(file, "r") as f:
 >>>        for line in f:
->>>            if line.string("Python") == True:
+>>>            if line.find("Python") == True:
 >>>                count += 1
 >>>            print("Python was found", count, "times")
 >>>~~~
@@ -155,9 +155,9 @@ keypoints:
 >>>def ref_finder(file_location):
 >>>
 >>>    file = file_location
->>>    with read.file(-r) as f:
+>>>    with open(file, "r") as f:
 >>>        for line in f:
->>>            if line.string("Python") == True:
+>>>            if line.find("Python") == True:
 >>>                count += 1
 >>>            print("Python was found", count, "times")
 >>>
@@ -179,9 +179,9 @@ keypoints:
 >>>
 >>>    file = file_location
 >>>    string = language
->>>    with read.file(-r) as f:
+>>>    with open(file, "r") as f:
 >>>        for line in f:
->>>            if line.string(string) == True:
+>>>            if line.find(string) == True:
 >>>                count += 1
 >>>            print(string, "was found", count, "times")
 >>>
@@ -206,26 +206,26 @@ keypoints:
 >>>    if both == True:
 >>>        string1 = 'R'
 >>>        string2 = 'Python'
->>>        with read.file(-r) as f:
+>>>        with open(file, "r") as f:
 >>>        for line in f:
->>>            if line.string(string1) == True:
+>>>            if line.find(string1) == True:
 >>>                R_count += 1
->>>            if line.string(string2) == True:
+>>>            if line.find(string2) == True:
 >>>                Py_count += 1
 >>>            print(string1, "was found", R_count, "times")
 >>>            print(string2, "was found", Py_count, "times")
 >>>    else:
 >>>        string = language
->>>        with read.file(-r) as f:
+>>>        with open(file, "r") as f:
 >>>            for line in f:
->>>                if line.string(string) == True:
+>>>                if line.find(string) == True:
 >>>                    count += 1
 >>>                print("string", "was found", count, "times")
 >>>
 >>>parser = argparse.ArgumentParser()
 >>>parser.add_argument("file_location")
 >>>parser.add_argument("language")
->>>parser.add_argument("count_both", -b, default = False)
+>>>parser.add_argument("-b", "--count_both", default = False)
 >>>args = parser.parse_args()
 >>>ref_finder(args.file_location, args.language, args.count_both)
 >>>~~~
