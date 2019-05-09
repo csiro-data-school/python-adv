@@ -13,7 +13,7 @@ objectives:
 - "Understand the relative merits of `help()` vs the online documentation."
 - "Know how to use the `type()` function to query the type of a Python object."
 keypoints:
-- "[The official Python documentation][python-documentation] is a good reference
+- "[The official Python documentation](python-documentation) is a good reference
   to the core Python language."
 - "You should ensure that the correct Python version is selected in the online
   documentation, as language features have changed over time."
@@ -31,7 +31,7 @@ The official documentation is a good place to start for any language. [The
 official Python documentation][python-documentation] is generally well
 organised and described, so this episode only highlights a few aspects.
 
-The first thing to note is the the url
+The first thing to note is that the url
 [https://docs.python.org/](https://docs.python.org/) automatically redirects you
 to the most recent stable release of Python. If you require documentation for
 a specific version, it can be selected by the drop-down box at the top left of
